@@ -86,4 +86,32 @@ body {
 }
 .games_list .games_item:hover {
   border: 3px solid #44D2FF;
+}
+
+@media (max-width: 376px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header {
+    padding-top: 238px;
+    height: 735px;
+  }
+  .header__title {
+    color: #FFF;
+    font-size: 32px;
+    text-align: center;
+  }
+  .header__slogan {
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .games_list {
+    flex-direction: column;
+  }
+  .games_list .games_item {
+    max-width: 343px;
+  }
 }/*# sourceMappingURL=style.css.map */

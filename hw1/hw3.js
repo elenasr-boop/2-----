@@ -69,7 +69,21 @@ let isMobile=window.innerWidth < 768;
 let os=navigator.platform; 
 if (os[0]==='i') {
     clientOs=0;
-} else {
+} else if (os='Android'){
     clientOs=1;
 }
 let clientDeviceYear=2015;
+let clientYear=prompt('Введите год выпуска смартфона');
+if (clientOs) {
+    if (Number(clientYear)>clientDeviceYear) {
+        console.log('Установите версию приложения для Android по ссылке');
+    } else {
+        console.log('Установите облегченную версию приложения для iOS по ссылке');
+    }
+} else {
+    if (Number(clientYear)>clientDeviceYear) {
+        console.log('Установите версию приложения для iOS по ссылке');
+    } else {
+        console.log('Установите облегченную версию приложения для iOS по ссылке');
+    }
+}

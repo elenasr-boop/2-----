@@ -1,4 +1,4 @@
-@media (max-width: 376px) {
+@media (max-width: 746px) {
     .center {
         padding-left: 16px;
         padding-right: 16px;
@@ -7,6 +7,9 @@
     .header {
         padding-top: 238px;
         height: 735px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         &__title {
             color: #FFF;
@@ -24,9 +27,38 @@
 
     .games_list {
         flex-direction: column;
+        align-items: center;
 
         .games_item {
             max-width: 343px;
         }
+    }
+
+    .game {
+        flex-direction: column;
+        align-items: center;
+        gap: 64px;
+
+        &__desc {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    .game1 {
+        padding-top: 51px;
+        padding-bottom: 85px;
+    }
+
+    .game2 {
+        padding-top: 51px;
+        padding-bottom: 90px;
+        flex-direction: column-reverse;
+    }
+
+    .game3 {
+        padding-top: 51px;
+        padding-bottom: 487px;
+        background-image: url(./img/mobile_bggame.png);
     }
 }

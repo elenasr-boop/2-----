@@ -17,15 +17,59 @@
 <body>
     <header class="header center">
         <h1 class="header__title">Добро пожаловать на мой сайт !</h1>
-        <p class="header__slogan">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span>поехали</span> и <span>приступай</span></p>
+        <p class="header__slogan">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+            <span>поехали</span> и <span>приступай</span>
+        </p>
         <button class="header__btn">Поехали!</button>
     </header>
 
     <section class="games_list center">
-        <a href="#" class="games_link"><div class="games_item games_item_1">Игра 1</div></a>
-        <a href="#" class="games_link"><div class="games_item games_item_2">Игра 2</div></a>
-        <a href="#" class="games_link"><div class="games_item games_item_3">Игра 3</div></a>
+        <a href="#" class="games_link">
+            <div class="games_item games_item_1">Игра 1</div>
+        </a>
+        <a href="#" class="games_link">
+            <div class="games_item games_item_2">Игра 2</div>
+        </a>
+        <a href="#" class="games_link">
+            <div class="games_item games_item_3">Игра 3</div>
+        </a>
     </section>
+
+    <section class="game game1 center">
+        <div class="game__desc">
+            <h2 class="game__title">Времена года</h2>
+            <p class="game__slogan">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+                <span>поехали</span> и <span>приступай</span>
+            </p>
+            <button class="game__button">Поехали!</button>
+        </div>
+        <picture class="game__img game1__img">
+            <source media="(max-width: 746px)" srcset="./img/mobile_game11.png">
+            <img src="./img/game11.png" alt="photo">
+        </picture>
+    </section>
+    <section class="game game2 center">
+        <picture class="game__img game2__img">
+            <source media="(max-width: 746px)" srcset="./img/mobile_game22.png">
+            <img src="./img/game22.png" alt="photo">
+        </picture>
+        <div class="game__desc">
+            <h2 class="game__title">Запомни слова </h2>
+            <p class="game__slogan">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо
+                запомнить.</p>
+            <button class="game__button">Играть</button>
+        </div>
+    </section>
+    <section class="game game3 center">
+        <h2 class="game__title">Игра в загадки</h2>
+        <p class="game__slogan">Компьютер загадывает загадку, вам необходимо ее угадать, если вы дадите не правильный
+            ответ, то компьютер даст вам подсказку. У вас будет три попытки и две подсказки.</p>
+        <button class="game__button">Играть!</button>
+    </section>
+
+    <footer class="footer center">
+        <h3 class="copy">Все права защищены</h3>
+    </footer>
 </body>
 
 </html>

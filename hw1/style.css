@@ -120,6 +120,9 @@ body {
   height: 48px;
   width: 234px;
 }
+.game__button:hover {
+  background: #EB443F;
+}
 .game__desc {
   display: flex;
   flex-direction: column;

@@ -135,6 +135,10 @@ body {
         width: 234px;
     }
 
+    &__button:hover {
+        background: #EB443F;
+    }
+
     &__desc {
         display: flex;
         flex-direction: column;

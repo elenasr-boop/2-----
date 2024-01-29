@@ -19,14 +19,14 @@ function rememberWords() {
     let arr = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
     arr = arr.sort(() => Math.random() - 0.5);
 
-    for (let i=0; i<arr.length; i++) {
-        alert(arr[i]);
-    }
+    alert(arr.join(', '));
 
     let first = prompt('Чему равнялся первый элемент массива?');
     let last = prompt('Чему равнялся последний элемент массива?');
 
-    if ((first.toLowerCase()==arr[0].toLowerCase()) && (last.toLowerCase()==arr[6].toLowerCase())) {
+    if (first==null || last==null) {
+        return;
+    } else if ((first.toLowerCase()==arr[0].toLowerCase()) && (last.toLowerCase()==arr[6].toLowerCase())) {
         alert('Поздравляю, вы выиграли!');
     } else if ((first.toLowerCase()==arr[0].toLowerCase()) || (last.toLowerCase()==arr[6].toLowerCase())) {
         alert('Вы были близки к победе!');

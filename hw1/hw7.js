@@ -19,16 +19,8 @@ let num=32.58884; //3
 console.log(Math.floor(num), Math.ceil(num), Math.round(num));
 
 let array=[52, 53, 49, 77, 21, 32]; //4
-let min=array[0];  
-let max=array[0];
-
-for (let i=0; i<array.length; i++) {
-    if (array[i]<min) {
-        min=array[i];
-    } else if (array[i]>max) {
-        max=array[i];
-    }
-}
+let min=Math.min(...array);  
+let max=Math.max(...array);
 
 console.log(min, max);
 
@@ -83,11 +75,33 @@ function dateInWords(myDate) { //10
     const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
     const months = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"];
 
-    let fullDate = 'Дата: '+ myDate.getDate() + ' ' + months[myDate.getMonth()] + ' ' + myDate.getFullYear() + ' - это ' + days[myDate.getDay()] + '\nВремя: ' + myDate.getHours() + ':' + myDate.getMinutes() + ':' + myDate.getSeconds();
+    let hours='';
+    let minutes='';
+    let seconds='';
+
+    if (myDate.getHours()<10) {
+        hours = hours + 0 + myDate.getHours();
+    } else {
+        hours = myDate.getHours();
+    }
+
+    if (myDate.getMinutes()<10) {
+        minutes = minutes + 0 + myDate.getMinutes();
+    } else {
+        minutes = myDate.getMinutes();
+    }
+
+    if (myDate.getSeconds()<10) {
+        seconds = seconds + 0 + myDate.getSeconds();
+    } else {
+        seconds = myDate.getSeconds();
+    }
+
+    let fullDate = 'Дата: '+ myDate.getDate() + ' ' + months[myDate.getMonth()] + ' ' + myDate.getFullYear() + ' - это ' + days[myDate.getDay()] + '\nВремя: ' + hours + ':' + minutes + ':' + seconds;
 
     return fullDate;
 }
 
-let searchDat = new Date(2023, 1);
+let searchDat = new Date();
 
 console.log(dateInWords(searchDat));

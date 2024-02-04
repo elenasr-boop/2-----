@@ -46,32 +46,32 @@ console.log(filter(people, isMale));
 
 // 3 задание 
 
-// function ThirtySeconds() {
-//     let date = new Date()
-// 		console.log(date);
+function ThirtySeconds() {
+    let date = new Date()
+		console.log(date);
 
-// 	let interval = setInterval(() => {
-// 		let date = new Date()
-// 		console.log(date);
-// 	}, 3000);
+	let interval = setInterval(() => {
+		let date = new Date()
+		console.log(date);
+	}, 3000);
 
-//     setTimeout(() => {
-//         clearInterval(interval);
-//         console.log('30 секунд прошло')
-//       }, 30000)
-// }
+    setTimeout(() => {
+        clearInterval(interval);
+        console.log('30 секунд прошло')
+      }, 30000)
+}
 
 // ThirtySeconds();
 
 // 4 задание 
 
-// function delayForSecond(callback) {
-//     let timeOut = setTimeout(callback, 1000)
-// }
+function delayForSecond(callback) {
+    let timeOut = setTimeout(callback, 1000)
+}
 
-// delayForSecond(function () {
-//   console.log('Привет, Глеб!');
-// })
+delayForSecond(function () {
+  console.log('Привет, Глеб!');
+})
 
 // 5 задание 
 
